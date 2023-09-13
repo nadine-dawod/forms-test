@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="https://unpkg.com/normalize.css">
     <link rel="stylesheet" href="/styles/forms.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis:wght@700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/cd6beb0eaf.js" crossorigin="anonymous"></script>
     <title>F O R M</title>
 </head>
 <body>
     <main>
+
+        <h1>FORM ON GAMES</h1>
+
         <form class="form" name="form-games">
 
             <fieldset class="BoardGames" form="form-games">
@@ -23,8 +25,9 @@
                 <input type="checkbox" id="BG-Q1-no" name="BG-Q1" value="0">
                  <!---How to make sure only one of the options can be ticked? Or is that
                 only possible with radiobuttons?-->   
-<br><br>                
-                <label for="BG-Q2-list">Which game do you prefer?</label><br>
+               <br><br> <!---I got feedback that <br> is considerate bad practice. 
+                But what to use instead when enter doesn't work?-->
+                <p class="BG-Q2-list">Which game do you prefer?</p>
                 <select id="BG-Q2-list" name="BG-Q2">
                     <option value="">---Please choose an option---</option>
                     <optgroup label="Strategic">
@@ -48,36 +51,32 @@
                     <input type="radio" name="CG-Q1" id="CG-Q1-yes" value="1">
                     <label for="CG-Q1-no">No</label>
                     <input type="radio" name="CG-Q1" id="CG-Q1-no" value="0">
-<br><br>
-                    <p class="CG-Q2">How much do you like playing card games?</p>
-                    <label for="CG-Q2-range">Not at all <input type="range" id="CG-Q2-range" name="CG-Q2" min="0" max="5"> Love it</label><br>
-<br>
-                    <p class="CG-Q3">Which is your favorite card game?</p>
-                    <label for="CG-Q3-text"></label>
+                    <br><br> 
+                    <p class="CG-Q2">How much do you like card games?</p>
+                    <label for="CG-Q2-range">Not at all <input type="range" id="CG-Q2-range" name="CG-Q2" min="0" max="5"> Love it</label>
+                    <br><br>
+                    <p class="CG-Q3">Which is your favorite card game?</p> 
                     <input type="text" id="CG-Q3-text" name="CG-Q3" placeholder="Enter favorite here">
-
-
-
             </fieldset>
 
             <fieldset class="Personal" form="form-games">
                 <legend>Personal</legend>
-<br>
+
                     <label for="monthyear">Born (year and month)</label>
                     <input type="month" id="monthyear" name="bornYandM">
-<br><br>
+                    <br><br>
                     <label for="email">Email (optional)</label>
                     <input type="email" id="email" name="email">
-<br><br>
+                    <br><br>
                     <label for="favcolor">Favorite color</label>
                     <input type="color" id="favcolor" name="favcolor>" value="#0000">
-<br><br>                   
+                    <br><br>
                     <input type="checkbox" id="check-agree" name="gdpr-agree" required>
-                    <label for="check-agree">I have read and agree to the <a href="/pages/privacy.html">Privacy Policy</a></label>
+                    <label for="check-agree">I have read and agree to the <a class="link-pp" href="/pages/privacy.html" target="_blank">Privacy Policy</a></label>
             </fieldset>
             <fieldset class="buttons" form="form-games">
-                <button class="btn-reset" type="reset">Reset</button>
-                <button class="btn-submit" type="submit">Submit</button>
+                <button class="btn btn-reset" type="reset">Reset</button>
+                <button class="btn btn-submit" type="submit">Submit</button>
                 <!---I prefer using the <button> tag since with the <input type="reset/submit"> 
                     the label on the buttons were in Swedsih. Using <button> made it possible 
                     for me to write the label on the buttons myself. Are there any other

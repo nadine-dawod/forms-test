@@ -2,8 +2,70 @@ body {
     background-image: url(/images/background.jpeg);
     background-size: cover;
     background-position: left;
+    max-width: fit-content;
+    margin: auto;
 }
 
 .form {
     background-color: whitesmoke;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 25px;
+
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+legend {
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+}
+
+label {
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+}
+
+select {
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+}
+
+.link-pp {
+    text-decoration: none;
+    color: black;}
+.link-pp:visited {color: black;}
+.link-pp:hover {color: brown; font-size: 14px;}
+
+
+.btn {
+    background-color: brown;
+    color: whitesmoke;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+    position: relative;
+        top: 0;
+        bottom: 0;
+        left: 50px;
+        right: 50px;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 2px 2px black;
+    cursor:pointer;
 }
