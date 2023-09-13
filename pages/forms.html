@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <link rel="stylesheet" href="/styles/forms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd6beb0eaf.js" crossorigin="anonymous"></script>
+    <title>F O R M</title>
+</head>
+<body>
+    <main>
+        <form class="form" name="form-games">
+
+            <fieldset class="BoardGames" form="form-games">
+                <legend>Board Games</legend>
+
+                <p class="BG-Q1">Do you like board games?</p>
+                <label for="BG-Q1-yes">Yes</label>
+                <input type="checkbox" id="BG-Q1-yes" name="BG-Q1" value="1">
+                <label for="BG-Q1-no">No</label>
+                <input type="checkbox" id="BG-Q1-no" name="BG-Q1" value="0">
+                 <!---How to make sure only one of the options can be ticked? Or is that
+                only possible with radiobuttons?-->   
+<br><br>                
+                <label for="BG-Q2-list">Which game do you prefer?</label><br>
+                <select id="BG-Q2-list" name="BG-Q2">
+                    <option value="">---Please choose an option---</option>
+                    <optgroup label="Strategic">
+                        <option value="AH">Arkham Horror</option>
+                        <option value="TM">Terraforming Mars</option>
+                        <option value="Sth">Scythe</option>
+                    </optgroup>
+
+                    <optgroup label="Classic">
+                        <option value="BG">Backgammon</option>¨
+                        <option value="CH">Chess</option>
+                        <option value="MH">MahJong</option>
+                    </optgroup>
+                </select>
+              </fieldset>
+
+                <fieldset class="CardGames" form="form-games">
+                    <legend>Card Games</legend>
+                    <p class="CG-Q1">Do you like card games?</p>
+                    <label for="CG-Q1-yes">Yes</label>
+                    <input type="radio" name="CG-Q1" id="CG-Q1-yes" value="1">
+                    <label for="CG-Q1-no">No</label>
+                    <input type="radio" name="CG-Q1" id="CG-Q1-no" value="0">
+<br><br>
+                    <p class="CG-Q2">How much do you like playing card games?</p>
+                    <label for="CG-Q2-range">Not at all <input type="range" id="CG-Q2-range" name="CG-Q2" min="0" max="5"> Love it</label><br>
+<br>
+                    <p class="CG-Q3">Which is your favorite card game?</p>
+                    <label for="CG-Q3-text"></label>
+                    <input type="text" id="CG-Q3-text" name="CG-Q3" placeholder="Enter favorite here">
+
+
+
+            </fieldset>
+
+            <fieldset class="Personal" form="form-games">
+                <legend>Personal</legend>
+<br>
+                    <label for="monthyear">Born (year and month)</label>
+                    <input type="month" id="monthyear" name="bornYandM">
+<br><br>
+                    <label for="email">Email (optional)</label>
+                    <input type="email" id="email" name="email">
+<br><br>
+                    <label for="favcolor">Favorite color</label>
+                    <input type="color" id="favcolor" name="favcolor>" value="#0000">
+<br><br>                   
+                    <input type="checkbox" id="check-agree" name="gdpr-agree" required>
+                    <label for="check-agree">I have read and agree to the <a href="/pages/privacy.html">Privacy Policy</a></label>
+            </fieldset>
+            <fieldset class="buttons" form="form-games">
+                <button class="btn-reset" type="reset">Reset</button>
+                <button class="btn-submit" type="submit">Submit</button>
+                <!---I prefer using the <button> tag since with the <input type="reset/submit"> 
+                    the label on the buttons were in Swedsih. Using <button> made it possible 
+                    for me to write the label on the buttons myself. Are there any other
+                    reasons for choosing either <button> or <input> for reset / submit? -->
+            </fieldset>
+            
+
+
+
+        </form>
+    </main>
+</body>
+</html>

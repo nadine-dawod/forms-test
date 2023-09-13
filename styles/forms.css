@@ -1,0 +1,9 @@
+body {
+    background-image: url(/images/background.jpeg);
+    background-size: cover;
+    background-position: left;
+}
+
+.form {
+    background-color: whitesmoke;
+}
