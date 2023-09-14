@@ -32,7 +32,7 @@ p {
     font-size: 15px;
 }
 
-label {
+label, ::placeholder {
     font-family: 'Comfortaa', cursive;
     font-size: 12px;
 }
