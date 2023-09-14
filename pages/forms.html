@@ -71,10 +71,24 @@
                     <label for="favcolor">Favorite color</label>
                     <input type="color" id="favcolor" name="favcolor>" value="#0000">
                     <br><br>
-                    <input type="checkbox" id="check-agree" name="gdpr-agree" required>
-                    <label for="check-agree">I have read and agree to the <a class="link-pp" href="/pages/privacy.html" target="_blank">Privacy Policy</a></label>
             </fieldset>
+            <fieldset>
+                <p class="ANY-ELSE"><label for="anything-else-text">Anything else you want to add?</label></p>
+                <textarea id="anything-else-text" name="anything-else" rows="2" cols="30" placeholder="Please write any other comment you have here"></textarea>
+
+            </fieldset>
+
             <fieldset class="buttons" form="form-games">
+
+                
+                <input type="checkbox" id="check-agree" name="gdpr-agree" required>
+                <span class="checkbox-customise">
+                </span>
+               <label for="check-agree">
+                    I have read and agree to the <a class="link-pp" href="/pages/privacy.html" target="_blank">
+                        Privacy Policy</a></label></fieldset>
+               
+<br><br>
                 <button class="btn btn-reset" type="reset">Reset</button>
                 <button class="btn btn-submit" type="submit">Submit</button>
                 <!---I prefer using the <button> tag since with the <input type="reset/submit"> 
